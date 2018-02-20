@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+
+<html> <!--The HTML document itself begins with <html> and ends with </html>-->
+	<head>
+	<meta name="viewport" content="userscalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, height=device-height, width=device-width, target-densitydpi=device-dpi" />
+	<link rel = "stylesheet" type = "text/css" href = "sspocketgarden.css">
+    <script type="text/javascript" src="index.js"></script>
+	<title>Index</title> <!-- this is the frontpage-->
+
+	</head>
+	
+	<body onload="onLoad();">
+
+	<div id="headtitle">
+	<h1>POCKET GARDEN</h1>
+	<h2>A Smarter Way to Grow</h2>
+	</div>
+	<ul id="bleDeviceList" style="display:none;"> </ul>
+
+	<div id= "buttons">
+		<button class="btn connect" onclick="conn()" disabled>Connect</button>
+		
+		<button class="btn plants" onclick="updateS()">My Garden</button>
+	</div>
+	
+	
+	<div id="notarea">
+		<p id="tempinfo" style="margin-top: 20px;">&nbsp;</p>
+		<p id="moistinfo">&nbsp;</p>
+		<p id="lightinfo">&nbsp;</p>
+	</div>
+	
+	<table style="display:none">
+        <tr>
+            <th>Plant</th>
+            <th>Moisture</th>
+			<th>Temperature</th>
+			<th>Light</th>
+        </tr>
+        <tr> 
+			<td class="Plant1Name">Tomato</td>
+            <td class="Plant1Moist">WET</td>
+			<td class="Plant1Temp">13</td>
+			<td class="Plant1Light">8</td>
+        </tr>
+         
+        <tr>
+            <td class="Plant2Name">Pepper</td>
+            <td class="Plant2Moist">WET</td>
+			<td class="Plant2Temp">16</td>
+			<td class="Plant2Light">8</td>
+        </tr>
+		<tr>
+			<td class="Plant3Name">Cabbage</td>
+            <td class="Plant3Moist">SOAKED</td>
+			<td class="Plant3Temp">15</td>
+			<td class="Plant3Light">6</td>
+		</tr>
+      </table>
+	
+		<div id= "buttonborder">
+		<text1>Tomato</text1>
+		<text2>Pepper</text2>
+		<text3>Cabbage</text3>
+		
+		<form action="">
+			<input type="radio" name="planttype" value="tomato">
+			<input type="radio" name="planttype" value="pepper"> 
+			<input type="radio" name="planttype" value="cabbage">
+		</form>
+		</div>
+	
+	
+			
+	</body>
+		
+		
+		
+	
+	
+</html>
